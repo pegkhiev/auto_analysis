@@ -1,0 +1,49 @@
+Challenge
+
+Part 1: MPG Regression
+- A multiple linear regression model is used with "vehicle length", "spoiler angle", and "ground clearance" as the variables to evaluate on their effect on predicting mpg. All three variables are chosen because they could all have an impact on mpg performance. 
+- The result shows that "Spoiler Angle" is most likely to provide random amounts of variance to predict mpg
+- On the otherhand, based on the given dataset "Vehicle Length" and "Ground Clearance" both show significant impact on mpg. 
+- The intercept also shows statistical significance, which shows that there are other variables and factors that are not included in this dataset. 
+- As two factors in the dataset show significant impact in the prediction of mpg, the slope of the model is not zero. 
+- The r-squared value of this multiple regression model is 0.68, so it is accurate in predicting mpg about 70% of the time.  If mpg is a cricial factor for customers to purchase a car, this prediction model may not be too effective. 
+
+Part 2: Suspension Coil Summary 
+The summary statistics for the suspension coils pounds-per-inch (PSI) are as follows:
+Max = 1542
+Min = 1452
+Mean = 1499
+Median = 1500
+Variance = 62.29356
+Standard Deviation = 7.892627
+- The data shows that the data distribution is very tight, and it passes the design specification of <100 pounds per inch in variance.  The max - min range is 90, with a variance of 62.29, so there is no variance of over 100 pounds per inch within the dataset. 
+
+3. Suspension Coil T-Test 
+A one-sample t-test is performed to test the null hypothesis of whether the sample data mean of PSI is statistically similar to the population mean of 1500. 
+- The result p-value is 0.06028. Assuming the significance level to be 0.05, the p-value indicates that there is no evidence to reject the null hypothesis. 
+- Therefore the sample data is statiscially similar to the population data. 
+
+4. Design own study 
+a) Factors to be considered in terms of car competitiveness. Given vehicles in the same engine size range, the customers would most likely be comparing the following factors in their decision.  These factors will determine: long term cost of ownership, comfort, driving performance, and safety. 
+- fuel efficiency (measured in mpg)
+- spaciousness (measured by vehicle length)
+- horsepower 
+- safety features (number of airbags)
+
+b) The hypothesis is that the higher the mpg, the longer the vehicle length, the higher the horsepower, and the more airbags will lead to higher customer preference. 
+
+c) Assuming that MechaCar will have the highest mpg, the longest vehicle length, the highest horsepower, and the most number of airbags within the vehicles in the same class. 
+
+d) The question to be asked is: Can we test if the above hypothesis is true, ie, can we test that there is a significant relationship in these factors to sales.  
+- Null hypothesis: There is no correlation of the factors to sales, ie, slope is zero.
+- Alternative hypothesis: The slope is not zero. 
+
+e) Statistical Test: multiple linear regression.  
+- Rejecting the null hypothesis will show that there is significant relationship that these factors are predictive of customers' evaluation and preference of the vehicle. 
+
+f) In order to perform multiple linear regression, the following data will need to be collected: 
+- mpg, vehicle length, horsepower, and number of airbags of all comparable cars in the market
+- sales data of each of the model 
+
+g) Significance level: p=0.05
+
